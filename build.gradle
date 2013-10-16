@@ -1,2 +1,26 @@
 
 apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'jacoco'
+
+apply from: 'repos.gradle'
+apply from: 'sonar.gradle'
+apply from: 'docs.gradle'
+
+group = 'com.aestasit.java'
+version = '0.1-SNAPSHOT'
+
+sourceCompatibility = '1.6'
+targetCompatibility = '1.6'
+
+dependencies {
+  testCompile 'commons-io:commons-io:1.4'
+}
+
+configurations {
+  all*.exclude group: 'commons-logging'
+  all*.exclude group: 'log4j'
+  all*.exclude module: 'slf4j-simple'
+}
