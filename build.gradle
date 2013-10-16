@@ -4,7 +4,7 @@ buildscript {
   dependencies { classpath 'org.ajoberstar:gradle-git:0.6.3' }
 }
 
-apply plugin: 'groovy'
+apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'idea'
 apply plugin: 'eclipse'
