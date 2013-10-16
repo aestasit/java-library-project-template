@@ -1,4 +1,4 @@
 java-project-template
 =====================
 
-Template for faster Java project creation.
+Gradle project template for faster Java project creation.
