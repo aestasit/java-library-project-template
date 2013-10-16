@@ -27,3 +27,7 @@ configurations {
   all*.exclude group: 'log4j'
   all*.exclude module: 'slf4j-simple'
 }
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '1.8'
+}
